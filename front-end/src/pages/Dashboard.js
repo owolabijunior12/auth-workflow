@@ -3,12 +3,19 @@ import styled from 'styled-components';
 import main from '../assets/main.svg';
 import { Redirect } from 'react-router-dom';
 import { useGlobalContext } from '../context';
+import './Dashboard.css';
+import Sidebar from '../layout/Sidebar/Sidebar';
+import Content from '../layout/Content/Content';
 function Dashboard() {
   const { user } = useGlobalContext();
   const { name, userId, role } = user;
   return (
     <>
-      <Wrapper className='page'>
+     <div className='app'>
+        <Sidebar />
+        <Content />                
+      </div>
+      {/* <Wrapper className='page'>
         <h2>Hello there, {user.name}</h2>
         <p>
           Your ID : <span>{userId}</span>
@@ -16,19 +23,19 @@ function Dashboard() {
         <p>
           Your Role : <span>{role}</span>
         </p>
-      </Wrapper>
+      </Wrapper> */}
     </>
   );
 }
 
-const Wrapper = styled.div`
-  p span {
-    background: var(--primary-500);
-    padding: 0.15rem 0.25rem;
-    color: var(--white);
-    border-radius: var(--borderRadius);
-    letter-spacing: var(--letterSpacing);
-  }
-`;
+// const Wrapper = styled.div`
+//   p span {
+//     background: var(--primary-500);
+//     padding: 0.15rem 0.25rem;
+//     color: var(--white);
+//     border-radius: var(--borderRadius);
+//     letter-spacing: var(--letterSpacing);
+//   }
+// `;
 
 export default Dashboard;
