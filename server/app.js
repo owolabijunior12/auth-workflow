@@ -1,5 +1,6 @@
 require('dotenv').config();
 require('express-async-errors');
+const mongoose = require('mongoose');
 // express
 
 const express = require('express');
@@ -56,15 +57,18 @@ app.use(notFoundMiddleware);
 app.use(errorHandlerMiddleware);
 
 const port = process.env.PORT || 5000;
-const start = async () => {
-  try {
-    await connectDB(process.env.MONGO_URL);
-    app.listen(port, () =>
-      console.log(`Server is listening on port ${port}...`)
-    );
-  } catch (error) {
-    console.log(error);
-  }
-};
+try {  
+  mongoose.connect(process.env.DB_STRINGS, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  });
+  console.log('Connected to MongoDB database...');
+} catch (error) {
+  console.error(error);
+}
 
-start();
+app.listen(port, () => {
+  console.log(`Server started and listening on port ${port}`);
+});
+
+

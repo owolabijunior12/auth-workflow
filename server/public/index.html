@@ -3,12 +3,9 @@
 <meta charset=utf-8>
 <meta http-equiv=x-ua-compatible content="ie=edge">
 <meta name=viewport content="width=device-width,initial-scale=1">
-<title>10-E-Commerce</title>
+<title>Auth workflow</title>
 <style media=screen>
- /*!* Bootstrap v3.3.7 (http://getbootstrap.com)
-* Copyright 2011-2016 Twitter, Inc.
-* Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)*/
- /*!normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css*/
+
  html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -8397,7 +8394,7 @@
 <div class=container-fluid>
  <div class=row>
   <div class="col-md-12 collection-intro">
-   <h3>10-E-Commerce</h3>
+   <h3>Auth workflow</h3>
    <p>
   </div>
   <div class=col-md-12>
@@ -8463,7 +8460,7 @@
            <h4 class=panel-title><span class="glyphicon glyphicon-plus"></span><strong>Login User</strong> &nbsp;|&nbsp;
             <strong class="request-method border-success">POST</strong>
             &nbsp;
-            https://e-commerce-api-10.herokuapp.com/auth/login
+            https://localhost:5000/auth/login
            </h4>
           </a>
          </div>
@@ -8484,7 +8481,7 @@
             &nbsp;|&nbsp;
             <strong class="request-method border-info">GET</strong>
             &nbsp;
-            https://e-commerce-api-10.herokuapp.com/auth/logout
+            https://localhost:5000/auth/logout
            </h4>
           </a></div>
          <div id=collapse-Auth-LogoutUser class="panel-collapse collapse">
@@ -8498,7 +8495,7 @@
             &nbsp;|&nbsp;
             <strong class="request-method border-success">POST</strong>
             &nbsp;
-            https://e-commerce-api-10.herokuapp.com/auth/register
+            https://localhost:5000/auth/register
            </h4>
           </a>
          </div>
@@ -8534,7 +8531,7 @@
             &nbsp;|&nbsp;
             <strong class="request-method border-success">POST</strong>
             &nbsp;
-            https://e-commerce-api-10.herokuapp.com/orders
+            https://localhost:5000/orders
            </h4>
           </a>
          </div>
@@ -8573,7 +8570,7 @@
             &nbsp;|&nbsp;
             <strong class="request-method border-info">GET</strong>
             &nbsp;
-            https://e-commerce-api-10.herokuapp.com/orders
+            https://localhost:5000/orders
            </h4>
           </a></div>
          <div id=collapse-Order-GetAllOrders class="panel-collapse collapse">
@@ -8587,7 +8584,7 @@
             &nbsp;|&nbsp;
             <strong class="request-method border-info">GET</strong>
             &nbsp;
-            https://e-commerce-api-10.herokuapp.com/orders/615f4146102158f9aa2674c5
+            https://localhost:5000/orders/615f4146102158f9aa2674c5
            </h4>
           </a></div>
          <div id=collapse-Order-GetSingleOrder class="panel-collapse collapse">
@@ -8601,7 +8598,7 @@
             &nbsp;|&nbsp;
             <strong class="request-method border-info">GET</strong>
             &nbsp;
-            https://e-commerce-api-10.herokuapp.com/orders/showAllMyOrders
+            https://localhost:5000/orders/showAllMyOrders
            </h4>
           </a></div>
          <div id=collapse-Order-ShowCurrentUserOrders class="panel-collapse collapse">
@@ -8615,7 +8612,7 @@
             &nbsp;|&nbsp;
             <strong class="request-method border-warning">PATCH</strong>
             &nbsp;
-            https://e-commerce-api-10.herokuapp.com/orders/615f4146102158f9aa2674c5
+            https://localhost:5000/orders/615f4146102158f9aa2674c5
            </h4>
           </a>
          </div>
@@ -8650,7 +8647,7 @@
             &nbsp;|&nbsp;
             <strong class="request-method border-success">POST</strong>
             &nbsp;
-            https://e-commerce-api-10.herokuapp.com/products
+            https://localhost:5000/products
            </h4>
           </a>
          </div>
@@ -8679,7 +8676,7 @@
             &nbsp;|&nbsp;
             <strong class="request-method border-danger">DELETE</strong>
             &nbsp;
-            https://e-commerce-api-10.herokuapp.com/products/61589c332d89d6d03c4b097c
+            https://localhost:5000/products/61589c332d89d6d03c4b097c
            </h4>
           </a></div>
          <div id=collapse-Product-DeleteProduct class="panel-collapse collapse">
@@ -8693,7 +8690,7 @@
             &nbsp;|&nbsp;
             <strong class="request-method border-info">GET</strong>
             &nbsp;
-            https://e-commerce-api-10.herokuapp.com/products
+            https://localhost:5000/products
            </h4>
           </a></div>
          <div id=collapse-Product-GetAllProducts class="panel-collapse collapse">
@@ -8707,7 +8704,7 @@
             &nbsp;|&nbsp;
             <strong class="request-method border-info">GET</strong>
             &nbsp;
-            https://e-commerce-api-10.herokuapp.com/products/6154c3286643006af7fb3dc6
+            https://localhost:5000/products/6154c3286643006af7fb3dc6
            </h4>
           </a></div>
          <div id=collapse-Product-GetSingleProduct class="panel-collapse collapse">
@@ -8721,7 +8718,7 @@
              Reviews</strong> &nbsp;|&nbsp;
             <strong class="request-method border-info">GET</strong>
             &nbsp;
-            https://e-commerce-api-10.herokuapp.com/products/6155fa77832f66342888475e/reviews
+            https://localhost:5000/products/6155fa77832f66342888475e/reviews
            </h4>
           </a></div>
          <div id=collapse-Product-GetSingleProductReviews class="panel-collapse collapse">
@@ -8736,7 +8733,7 @@
             &nbsp;|&nbsp;
             <strong class="request-method border-warning">PATCH</strong>
             &nbsp;
-            https://e-commerce-api-10.herokuapp.com/products/6154c3286643006af7fb3dc6
+            https://localhost:5000/products/6154c3286643006af7fb3dc6
            </h4>
           </a>
          </div>
@@ -8756,7 +8753,7 @@
             &nbsp;|&nbsp;
             <strong class="request-method border-success">POST</strong>
             &nbsp;
-            https://e-commerce-api-10.herokuapp.com/products/uploadImage
+            https://localhost:5000/products/uploadImage
            </h4>
           </a>
          </div>
@@ -8799,7 +8796,7 @@
             &nbsp;|&nbsp;
             <strong class="request-method border-success">POST</strong>
             &nbsp;
-            https://e-commerce-api-10.herokuapp.com/reviews
+            https://localhost:5000/reviews
            </h4>
           </a>
          </div>
@@ -8822,7 +8819,7 @@
             &nbsp;|&nbsp;
             <strong class="request-method border-danger">DELETE</strong>
             &nbsp;
-            https://e-commerce-api-10.herokuapp.com/reviews/615de44828b69f6ec77caa0c
+            https://localhost:5000/reviews/615de44828b69f6ec77caa0c
            </h4>
           </a></div>
          <div id=collapse-Review-DeleteReview class="panel-collapse collapse">
@@ -8836,7 +8833,7 @@
             &nbsp;|&nbsp;
             <strong class="request-method border-info">GET</strong>
             &nbsp;
-            https://e-commerce-api-10.herokuapp.com/reviews
+            https://localhost:5000/reviews
            </h4>
           </a></div>
          <div id=collapse-Review-GetAllReviews class="panel-collapse collapse">
@@ -8850,7 +8847,7 @@
             &nbsp;|&nbsp;
             <strong class="request-method border-info">GET</strong>
             &nbsp;
-            https://e-commerce-api-10.herokuapp.com/reviews/61560e910a8b8820af76f681
+            https://localhost:5000/reviews/61560e910a8b8820af76f681
            </h4>
           </a></div>
          <div id=collapse-Review-GetSingleReview class="panel-collapse collapse">
@@ -8864,7 +8861,7 @@
             &nbsp;|&nbsp;
             <strong class="request-method border-warning">PATCH</strong>
             &nbsp;
-            https://e-commerce-api-10.herokuapp.com/reviews/615c9385ba4935b9aea4a444
+            https://localhost:5000/reviews/615c9385ba4935b9aea4a444
            </h4>
           </a>
          </div>
@@ -8900,7 +8897,7 @@
             &nbsp;|&nbsp;
             <strong class="request-method border-info">GET</strong>
             &nbsp;
-            https://e-commerce-api-10.herokuapp.com/users
+            https://localhost:5000/users
            </h4>
           </a></div>
          <div id=collapse-User-GetAllUsers class="panel-collapse collapse">
@@ -8914,7 +8911,7 @@
             &nbsp;|&nbsp;
             <strong class="request-method border-info">GET</strong>
             &nbsp;
-            https://e-commerce-api-10.herokuapp.com/users/6150a1001364422066ce901c
+            https://localhost:5000/users/6150a1001364422066ce901c
            </h4>
           </a></div>
          <div id=collapse-User-GetSingleUser class="panel-collapse collapse">
@@ -8928,7 +8925,7 @@
             &nbsp;|&nbsp;
             <strong class="request-method border-info">GET</strong>
             &nbsp;
-            https://e-commerce-api-10.herokuapp.com/users/showMe
+            https://localhost:5000/users/showMe
            </h4>
           </a></div>
          <div id=collapse-User-ShowCurrentUser class="panel-collapse collapse">
@@ -8942,7 +8939,7 @@
             &nbsp;|&nbsp;
             <strong class="request-method border-warning">PATCH</strong>
             &nbsp;
-            https://e-commerce-api-10.herokuapp.com/users/updateUser
+            https://localhost:5000/users/updateUser
            </h4>
           </a>
          </div>
@@ -8962,7 +8959,7 @@
             &nbsp;|&nbsp;
             <strong class="request-method border-warning">PATCH</strong>
             &nbsp;
-            https://e-commerce-api-10.herokuapp.com/users/updateUserPassword
+            https://localhost:5000/users/updateUserPassword
            </h4>
           </a>
          </div>
@@ -8985,7 +8982,7 @@
  </div>
  <br><br>
  <script src="./browser-app.js"></script>
- <footer class="navbar-default navbar-fixed-bottom">
+ <!-- <footer class="navbar-default navbar-fixed-bottom">
   <div class=container-fluid>
    <div class="span12 text-center"><span data-toggle=tooltip
      title="If the application help you, please feel free to give a star to the project in github. Your star inspire me to work more on open-source projects like this!">Made
@@ -8993,4 +8990,4 @@
       class=text-muted>thedevsaddam</a> | Generated at: 2021-10-09 10:02:11 by <a
       href=https://github.com/thedevsaddam/docgen target=_blank class=text-muted>docgen</a></span></div>
   </div>
- </footer>
+ </footer> -->

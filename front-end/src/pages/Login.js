@@ -38,6 +38,7 @@ function Login() {
     } catch (error) {
       showAlert({ text: error.response.data.msg });
       setLoading(false);
+      console.log(error)
     }
   };
 

@@ -14,13 +14,13 @@ import Navbar from './components/Navbar';
 import { useGlobalContext } from './context';
 function App() {
   const { isLoading } = useGlobalContext();
-  if (isLoading) {
-    return (
-      <section className='page page-center'>
-        <div className='loading'></div>
-      </section>
-    );
-  }
+  // if (isLoading) {
+  //   return (
+  //     <section className='page page-center'>
+  //       <div className='loading'></div>
+  //     </section>
+  //   );
+  // }
   return (
     <Router>
       <Navbar />
